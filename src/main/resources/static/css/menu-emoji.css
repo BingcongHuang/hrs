@@ -1,0 +1,545 @@
+.icon_emotion.emotion_switch {
+ background:url(../images/emotion_editor_z3a7b39.png) 0 0 no-repeat;
+ width:20px;
+ height:20px;
+ vertical-align:middle;
+ display:inline-block
+}
+.icon_emotion.emotion_switch:hover {
+ background:url(../images/emotion_editor_z3a7b39.png) 0 -24px no-repeat
+}
+.disabled .icon_emotion.emotion_switch:hover {
+ background:url(../images/emotion_editor_z3a7b39.png) 0 -48px no-repeat
+}
+.emotion_editor {
+ position:relative;
+ z-index:1;
+ border:1px solid #e7e7eb;
+ border-radius:0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0
+}
+.test .emotion_editor {
+ margin:20px
+}
+.emotion_editor .edit_area {
+ padding:14px 20px;
+ outline:0;
+ word-wrap:break-word;
+ word-break:break-all;
+ border-top-left-radius:0;
+ -moz-border-radius-topleft:0;
+ -webkit-border-top-left-radius:0;
+ border-top-right-radius:0;
+ -moz-border-radius-topright:0;
+ -webkit-border-top-right-radius:0;
+ background-color:#fff;
+ height:188px
+}
+.emotion_editor .edit_area img {
+ vertical-align:middle
+}
+.editor_toolbar {
+ *zoom:1;
+ padding:0 20px;
+ line-height:36px;
+ background-color:#fff;
+ border-top:1px solid #e7e7eb
+}
+.editor_toolbar:after {
+ content:"\200B";
+ display:block;
+ height:0;
+ clear:both
+}
+.editor_tip {
+ float:right;
+ color:#8d8d8d
+}
+.editor_tip em {
+ font-weight:400;
+ font-style:normal;
+ margin-left:3px;
+ margin-right:3px
+}
+.editor_tip .warn {
+ color:#e15f63
+}
+.emotion_switch {
+ float:left;
+ margin-top:8px;
+ height:28px;
+ line-height:999em;
+ overflow:hidden
+}
+.emotion_wrp {
+ display:none;
+ position:absolute;
+ width:401px;
+ top:100%;
+ left:-1px
+}
+.emotions {
+ -moz-user-select:none;
+ overflow:hidden;
+ *zoom:1;
+ border-top:1px solid #c0bfc5;
+ border-right:1px solid #c0bfc5;
+ background-color:#e7e7eb
+}
+.emotions_item {
+ float:left;
+ width:24px;
+ height:24px;
+ line-height:24px;
+ font-size:0;
+ text-align:center;
+ border-bottom:1px solid #c0bfc5;
+ border-left:1px solid #c0bfc5;
+ background-color:#fff
+}
+.emotions_item:hover {
+ background:rgba(255,255,255,0.75)!important;
+ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#bfffffff',endcolorstr = '#bfffffff')
+}
+.emotions_preview {
+ position:absolute;
+ top:0;
+ right:-81px;
+ display:block;
+ width:80px;
+ height:80px;
+ line-height:80px;
+ font-size:0;
+ text-align:center;
+ border:1px solid #c0bfc5;
+ background-color:#fff;
+ display:none
+}
+.emotions_preview img {
+ position:absolute;
+ top:50%;
+ left:50%;
+ margin-left:-12px;
+ margin-top:-12px
+}
+.hook {
+ position:absolute;
+ left:21px;
+ top:0
+}
+.hook .hook_dec {
+ position:absolute;
+ left:0;
+ width:0;
+ height:0;
+ border-style:solid;
+ border-width:8px
+}
+.hook .hook_top {
+ top:-16px;
+ border-color:transparent transparent #c0bfc5
+}
+.hook .hook_btm {
+ top:-15px;
+ border-color:transparent transparent #f6f6f6
+}
+
+
+.icon_emotion_sprite {
+ cursor:pointer;
+ width:20px;
+ height:20px;
+ vertical-align:middle;
+ display:inline-block;
+ background:transparent url(../images/icon_emotion_panel.2x3a7b38.png) no-repeat 0 0;
+ -webkit-background-size:20px auto;
+ background-size:20px auto
+}
+.icon_emotion_single {
+ width:20px;
+ height:20px;
+ vertical-align:middle;
+ display:inline-block;
+ -webkit-background-size:20px auto;
+ background-size:20px auto
+}
+.icon_smiley_0 {
+ background-image:url(../images/smiley_03a7b38.png)
+}
+.icon_smiley_1 {
+ background-image:url(../images/smiley_13a7b38.png)
+}
+.icon_smiley_2 {
+ background-image:url(../images/smiley_23a7b38.png)
+}
+.icon_smiley_3 {
+ background-image:url(../images/smiley_33a7b38.png)
+}
+.icon_smiley_4 {
+ background-image:url(../images/smiley_43a7b38.png)
+}
+.icon_smiley_5 {
+ background-image:url(../images/smiley_53a7b38.png)
+}
+.icon_smiley_6 {
+ background-image:url(../images/smiley_63a7b38.png)
+}
+.icon_smiley_7 {
+ background-image:url(../images/smiley_73a7b38.png)
+}
+.icon_smiley_8 {
+ background-image:url(../images/smiley_83a7b38.png)
+}
+.icon_smiley_9 {
+ background-image:url(../images/smiley_93a7b38.png)
+}
+.icon_smiley_10 {
+ background-image:url(../images/smiley_103a7b38.png)
+}
+.icon_smiley_11 {
+ background-image:url(../images/smiley_113a7b38.png)
+}
+.icon_smiley_12 {
+ background-image:url(../images/smiley_123a7b38.png)
+}
+.icon_smiley_13 {
+ background-image:url(../images/smiley_133a7b38.png)
+}
+.icon_smiley_14 {
+ background-image:url(../images/smiley_143a7b38.png)
+}
+.icon_smiley_15 {
+ background-image:url(../images/smiley_153a7b38.png)
+}
+.icon_smiley_16 {
+ background-image:url(../images/smiley_163a7b38.png)
+}
+.icon_smiley_17 {
+ background-image:url(../images/smiley_173a7b38.png)
+}
+.icon_smiley_18 {
+ background-image:url(../images/smiley_183a7b38.png)
+}
+.icon_smiley_19 {
+ background-image:url(../images/smiley_193a7b38.png)
+}
+.icon_smiley_20 {
+ background-image:url(../images/smiley_203a7b38.png)
+}
+.icon_smiley_21 {
+ background-image:url(../images/smiley_213a7b38.png)
+}
+.icon_smiley_22 {
+ background-image:url(../images/smiley_223a7b38.png)
+}
+.icon_smiley_23 {
+ background-image:url(../images/smiley_233a7b38.png)
+}
+.icon_smiley_24 {
+ background-image:url(../images/smiley_243a7b38.png)
+}
+.icon_smiley_25 {
+ background-image:url(../images/smiley_253a7b38.png)
+}
+.icon_smiley_26 {
+ background-image:url(../images/smiley_263a7b38.png)
+}
+.icon_smiley_27 {
+ background-image:url(../images/smiley_273a7b38.png)
+}
+.icon_smiley_28 {
+ background-image:url(../images/smiley_283a7b38.png)
+}
+.icon_smiley_29 {
+ background-image:url(../images/smiley_293a7b38.png)
+}
+.icon_smiley_30 {
+ background-image:url(../images/smiley_303a7b38.png)
+}
+.icon_smiley_31 {
+ background-image:url(../images/smiley_313a7b38.png)
+}
+.icon_smiley_32 {
+ background-image:url(../images/smiley_323a7b38.png)
+}
+.icon_smiley_33 {
+ background-image:url(../images/smiley_333a7b38.png)
+}
+.icon_smiley_34 {
+ background-image:url(../images/smiley_343a7b38.png)
+}
+.icon_smiley_35 {
+ background-image:url(../images/smiley_353a7b38.png)
+}
+.icon_smiley_36 {
+ background-image:url(../images/smiley_363a7b38.png)
+}
+.icon_smiley_37 {
+ background-image:url(../images/smiley_373a7b38.png)
+}
+.icon_smiley_38 {
+ background-image:url(../images/smiley_383a7b38.png)
+}
+.icon_smiley_39 {
+ background-image:url(../images/smiley_393a7b38.png)
+}
+.icon_smiley_40 {
+ background-image:url(../images/smiley_403a7b38.png)
+}
+.icon_smiley_41 {
+ background-image:url(../images/smiley_413a7b38.png)
+}
+.icon_smiley_42 {
+ background-image:url(../images/smiley_423a7b38.png)
+}
+.icon_smiley_43 {
+ background-image:url(../images/smiley_433a7b38.png)
+}
+.icon_smiley_44 {
+ background-image:url(../images/smiley_443a7b38.png)
+}
+.icon_smiley_45 {
+ background-image:url(../images/smiley_453a7b38.png)
+}
+.icon_smiley_46 {
+ background-image:url(../images/smiley_463a7b38.png)
+}
+.icon_smiley_47 {
+ background-image:url(../images/smiley_473a7b38.png)
+}
+.icon_smiley_48 {
+ background-image:url(../images/smiley_483a7b38.png)
+}
+.icon_smiley_49 {
+ background-image:url(../images/smiley_493a7b38.png)
+}
+.icon_smiley_50 {
+ background-image:url(../images/smiley_503a7b38.png)
+}
+.icon_smiley_51 {
+ background-image:url(../images/smiley_513a7b38.png)
+}
+.icon_smiley_52 {
+ background-image:url(../images/smiley_523a7b38.png)
+}
+.icon_smiley_53 {
+ background-image:url(../images/smiley_533a7b38.png)
+}
+.icon_smiley_54 {
+ background-image:url(../images/smiley_543a7b38.png)
+}
+.icon_smiley_55 {
+ background-image:url(../images/smiley_553a7b38.png)
+}
+.icon_smiley_56 {
+ background-image:url(../images/smiley_563a7b38.png)
+}
+.icon_smiley_57 {
+ background-image:url(../images/smiley_573a7b38.png)
+}
+.icon_smiley_58 {
+ background-image:url(../images/smiley_583a7b38.png)
+}
+.icon_smiley_59 {
+ background-image:url(../images/smiley_593a7b38.png)
+}
+.icon_smiley_60 {
+ background-image:url(../images/smiley_603a7b38.png)
+}
+.icon_smiley_61 {
+ background-image:url(../images/smiley_613a7b38.png)
+}
+.icon_smiley_62 {
+ background-image:url(../images/smiley_623a7b38.png)
+}
+.icon_smiley_63 {
+ background-image:url(../images/smiley_633a7b38.png)
+}
+.icon_smiley_64 {
+ background-image:url(../images/smiley_643a7b38.png)
+}
+.icon_smiley_65 {
+ background-image:url(../images/smiley_653a7b38.png)
+}
+.icon_smiley_66 {
+ background-image:url(../images/smiley_663a7b38.png)
+}
+.icon_smiley_67 {
+ background-image:url(../images/smiley_673a7b38.png)
+}
+.icon_smiley_68 {
+ background-image:url(../images/smiley_683a7b38.png)
+}
+.icon_smiley_69 {
+ background-image:url(../images/smiley_693a7b38.png)
+}
+.icon_smiley_70 {
+ background-image:url(../images/smiley_703a7b38.png)
+}
+.icon_smiley_71 {
+ background-image:url(../images/smiley_713a7b38.png)
+}
+.icon_smiley_72 {
+ background-image:url(../images/smiley_723a7b38.png)
+}
+.icon_smiley_73 {
+ background-image:url(../images/smiley_733a7b38.png)
+}
+.icon_smiley_74 {
+ background-image:url(../images/smiley_743a7b38.png)
+}
+.icon_smiley_75 {
+ background-image:url(../images/smiley_753a7b38.png)
+}
+.icon_smiley_76 {
+ background-image:url(../images/smiley_763a7b38.png)
+}
+.icon_smiley_77 {
+ background-image:url(../images/smiley_773a7b38.png)
+}
+.icon_smiley_78 {
+ background-image:url(../images/smiley_783a7b38.png)
+}
+.icon_smiley_79 {
+ background-image:url(../images/smiley_793a7b38.png)
+}
+.icon_smiley_80 {
+ background-image:url(../images/smiley_803a7b38.png)
+}
+.icon_smiley_81 {
+ background-image:url(../images/smiley_813a7b38.png)
+}
+.icon_smiley_82 {
+ background-image:url(../images/smiley_823a7b38.png)
+}
+.icon_smiley_83 {
+ background-image:url(../images/smiley_833a7b38.png)
+}
+.icon_smiley_84 {
+ background-image:url(../images/smiley_843a7b38.png)
+}
+.icon_smiley_85 {
+ background-image:url(../images/smiley_853a7b38.png)
+}
+.icon_smiley_86 {
+ background-image:url(../images/smiley_863a7b38.png)
+}
+.icon_smiley_87 {
+ background-image:url(../images/smiley_873a7b38.png)
+}
+.icon_smiley_88 {
+ background-image:url(../images/smiley_883a7b38.png)
+}
+.icon_smiley_89 {
+ background-image:url(../images/smiley_893a7b38.png)
+}
+.icon_smiley_90 {
+ background-image:url(../images/smiley_903a7b38.png)
+}
+.icon_smiley_91 {
+ background-image:url(../images/smiley_913a7b38.png)
+}
+.icon_smiley_92 {
+ background-image:url(../images/smiley_923a7b38.png)
+}
+.icon_smiley_93 {
+ background-image:url(../images/smiley_933a7b38.png)
+}
+.icon_smiley_94 {
+ background-image:url(../images/smiley_943a7b38.png)
+}
+.icon_smiley_95 {
+ background-image:url(../images/smiley_953a7b38.png)
+}
+.icon_smiley_96 {
+ background-image:url(../images/smiley_963a7b38.png)
+}
+.icon_smiley_97 {
+ background-image:url(../images/smiley_973a7b38.png)
+}
+.icon_smiley_98 {
+ background-image:url(../images/smiley_983a7b38.png)
+}
+.icon_smiley_99 {
+ background-image:url(../images/smiley_993a7b38.png)
+}
+.icon_smiley_100 {
+ background-image:url(../images/smiley_1003a7b38.png)
+}
+.icon_smiley_101 {
+ background-image:url(../images/smiley_1013a7b38.png)
+}
+.icon_smiley_102 {
+ background-image:url(../images/smiley_1023a7b38.png)
+}
+.icon_smiley_103 {
+ background-image:url(../images/smiley_1033a7b38.png)
+}
+.icon_smiley_104 {
+ background-image:url(../images/smiley_1043a7b38.png)
+}
+.icon_emoji_ios_0 {
+ background-image:url(../images/u1F6043a7b38.png)
+}
+.icon_emoji_ios_1 {
+ background-image:url(../images/u1F6373a7b38.png)
+}
+.icon_emoji_ios_2 {
+ background-image:url(../images/u1F6023a7b38.png)
+}
+.icon_emoji_ios_3 {
+ background-image:url(../images/u1F61D3a7b38.png)
+}
+.icon_emoji_ios_4 {
+ background-image:url(../images/u1F6333a7b38.png)
+}
+.icon_emoji_ios_5 {
+ background-image:url(../images/u1F6313a7b38.png)
+}
+.icon_emoji_ios_6 {
+ background-image:url(../images/u1F6143a7b38.png)
+}
+.icon_emoji_ios_7 {
+ background-image:url(../images/u1F6123a7b38.png)
+}
+.icon_emoji_wx_4 {
+ background-image:url(../images/2_043a7b38.png)
+}
+.icon_emoji_wx_5 {
+ background-image:url(../images/2_053a7b38.png)
+}
+.icon_emoji_wx_2 {
+ background-image:url(../images/2_023a7b38.png)
+}
+.icon_emoji_wx_6 {
+ background-image:url(../images/2_063a7b38.png)
+}
+.icon_emoji_wx_12 {
+ background-image:url(../images/2_123a7b38.png)
+}
+.icon_emoji_wx_11 {
+ background-image:url(../images/2_113a7b38.png)
+}
+.icon_emoji_ios_8 {
+ background-image:url(../images/u1F47B3a7b38.png)
+}
+.icon_emoji_ios_9 {
+ background-image:url(../images/u1F64F03a7b38.png)
+}
+.icon_emoji_ios_10 {
+ background-image:url(../images/u1F4AA.03a7b38.png)
+}
+.icon_emoji_ios_11 {
+ background-image:url(../images/u1F3893a7b38.png)
+}
+.icon_emoji_ios_12 {
+ background-image:url(../images/u1F3813a7b38.png)
+}
+.icon_emoji_wx_9 {
+ background-image:url(../images/2_093a7b38.png)
+}
+.icon_emoji_wx_14 {
+ background-image:url(../images/2_143a7b38.png)
+}
+

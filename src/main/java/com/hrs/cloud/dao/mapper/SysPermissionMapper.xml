@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrs.cloud.dao.SysPermissionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hrs.cloud.entity.SysPermission">
+        <id column="ID" property="id" />
+        <result column="PERMISSION" property="permission" />
+        <result column="DESCRIPTION" property="description" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="CREATE_BY" property="createBy" />
+        <result column="UPDATE_BY" property="updateBy" />
+        <result column="RES_TYPE" property="resType" />
+        <result column="PARENT_ID" property="parentId" />
+        <result column="MENU_ICON" property="menuIcon" />
+        <result column="MENU_ORDER" property="menuOrder" />
+        <result column="DELETED" property="deleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, PERMISSION, DESCRIPTION, CREATE_TIME, UPDATE_TIME, CREATE_BY, UPDATE_BY, RES_TYPE, PARENT_ID, MENU_ICON, MENU_ORDER, DELETED
+    </sql>
+    <select id="selectRolePermission" resultType="com.hrs.cloud.entity.vo.RolePermissionVO">
+
+    select role,permission,RES_TYPE as resType,DESCRIPTION as description,PARENT_ID as parentId,ID as id,MENU_ORDER as menuOrder,MENU_ICON as menuIcon from
+    (select a.role,b.permissionId from sys_role a
+    LEFT JOIN sys_role_permission_relation b on a.id=b.roleId) c
+    LEFT JOIN sys_permission d on (c.permissionId=d.id AND d.DELETED = 0)
+    order by MENU_ORDER
+  </select>
+
+    <select id="selectPermissionsAll" resultMap="BaseResultMap" >
+        select
+        <include refid="Base_Column_List" />
+        from sys_permission
+        WHERE DELETED = 0
+    </select>
+
+</mapper>

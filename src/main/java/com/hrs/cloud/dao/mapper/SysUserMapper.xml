@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrs.cloud.dao.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hrs.cloud.entity.SysUser">
+        <id column="ID" property="id" />
+        <result column="USER_ID" property="userId" />
+        <result column="USER_NAME" property="userName" />
+        <result column="USER_SEX" property="userSex" />
+        <result column="USER_TELPHONE" property="userTelphone" />
+        <result column="USER_EMAIL" property="userEmail" />
+        <result column="USER_PASSWORD" property="userPassword" />
+        <result column="SALT" property="salt" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="CREATE_BY" property="createBy" />
+        <result column="UPDATE_BY" property="updateBy" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="LOCKED" property="locked" />
+        <result column="USER_AVATOR" property="userAvator" />
+        <result column="IS_DELETED" property="isDeleted" />
+        <result column="USER_REALNAME" property="userRealname" />
+        <result column="FIRST_DPT_ID" property="firstDptId" />
+        <result column="SECOND_DPT_ID" property="secondDptId" />
+        <result column="BIRTHDAY" property="birthday" />
+        <result column="DOCTOR_LEVEL" property="doctorLevel" />
+        <result column="ID_TYPE" property="idType" />
+        <result column="ID_NUM" property="idNum" />
+        <result column="DOCTOR_INTRODUCTION" property="doctorIntroduction" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, USER_ID, USER_NAME, USER_SEX, USER_TELPHONE, USER_EMAIL, USER_PASSWORD, SALT, CREATE_TIME, CREATE_BY, UPDATE_BY, UPDATE_TIME, LOCKED, USER_AVATOR, IS_DELETED, USER_REALNAME, FIRST_DPT_ID, SECOND_DPT_ID, BIRTHDAY, DOCTOR_LEVEL, ID_TYPE, ID_NUM, DOCTOR_INTRODUCTION
+    </sql>
+
+</mapper>

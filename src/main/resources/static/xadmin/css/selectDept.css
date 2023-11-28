@@ -1,0 +1,44 @@
+/*自定义部门下拉树*/
+#allDept {
+    display: none;
+    border-left: 1px solid #d2d2d26b;
+    border-top: 0px;
+    border-right: 1px solid #d2d2d26b;
+    border-bottom: 1px solid #d2d2d26b;
+    padding-bottom: 20px;
+    height: 200px;
+    overflow-y: scroll;
+    z-index: -1;
+}
+
+#allDept::-webkit-scrollbar {
+    display: none
+}
+
+#allDept span {
+    transition: 0.3s;
+}
+
+#allDept span:hover {
+    color: #3874EB;
+    text-shadow: 2px 2px 3px lightgray;
+}
+
+.layui-colla-title {
+    border: 0px;
+    height: 30px;
+}
+
+.layui-colla-content {
+    padding: 0px 0px 0px 35px;
+}
+
+.layui-collapse {
+    margin-bottom: 0px;
+}
+
+.buts {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+}

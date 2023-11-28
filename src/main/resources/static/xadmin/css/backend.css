@@ -1,0 +1,151 @@
+/*契合UI设计的样式123*/
+.downpanel .layui-select-title span {
+    line-height: 30px;
+}
+
+.downpanel dl dd:hover {
+    background-color: inherit;
+}
+
+.layui-btn-primary, .layui-btn-normal {
+    min-width: 90px;
+}
+
+.layui-btn-normal {
+    background-color: #3874EB;
+}
+
+.layui-btn-primary {
+    border-color: #3874EB;
+    color: #3874EB
+}
+
+.layui-btn-primary:hover {
+    border-color: #3874EB;
+    color: #3874EB
+}
+
+.layui-input:hover, .layui-textarea:hover {
+    border-color: #3874EB !important
+}
+
+.layui-input:focus, .layui-textarea:focus {
+    border-color: #3874EB !important
+}
+
+.layui-input:focus, .layui-textarea:focus {
+    border-color: #3874EB!important;
+}
+
+.layui-colla-title {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+}
+
+.layui-colla-content {
+    padding: 10px 0px 0px 35px;
+    border: 0px;
+}
+.layui-colla-content:last-child {
+    padding-bottom: 0px;
+}
+
+.layui-collapse{
+    border: 0px;
+    margin-bottom: 10px;
+}
+
+.layui-collapse:last-child{
+    margin-bottom: 0px;
+}
+
+/*.layui-colla-item{*/
+/*    margin-bottom: 10px;*/
+/*}*/
+/*.layui-colla-item:last-child{*/
+/*    margin-bottom: 0px;*/
+/*}*/
+a{
+    color: #3874EB;
+    transition: 0.2s;
+}
+
+a:hover{
+    color: #3874EB;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.cha{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 20px;
+}
+.boxes::-webkit-scrollbar {
+    display: none;
+}
+
+.layui-form-radio>i:hover, .layui-form-radioed>i {
+    color: #3874EB;
+}
+.layui-form-select dl dd.layui-this {
+    background-color: #3874EB;
+    color: #fff;
+}
+
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #3874EB;
+}
+
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+    background-color: #3874EB;
+}
+
+.buts-frame {
+    position: relative;
+}
+.buts-frame>button{
+    float: right;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.layui-form-checked span, .layui-form-checked:hover span {
+    background-color: #3874EB;
+}
+.layui-form-checked i, .layui-form-checked:hover i {
+    color:#3874EB;
+}
+
+.layui-laydate .layui-this {
+    background-color: #3874eb !important;
+    color: #fff !important;
+}
+
+.laydate-selected:hover {
+    background-color: #00C9F770 !important;
+}
+
+.layui-laydate-content td.laydate-selected {
+    background-color: #00C9F770
+}
+
+.layui-btn-sm {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    font-size: 12px;
+}

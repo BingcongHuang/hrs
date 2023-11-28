@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrs.cloud.dao.ToolInstMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hrs.cloud.entity.ToolInst">
+        <id column="ID" property="id" />
+        <result column="TOOL_CODE" property="toolCode" />
+        <result column="SEQ_NO" property="seqNo" />
+        <result column="TOOL_NAME" property="toolName" />
+        <result column="TOOL_ENAME" property="toolEname" />
+        <result column="PIC" property="pic" />
+        <result column="GUIDE_NUM" property="guideNum" />
+        <result column="AIRCRAFT_TYPE" property="aircraftType" />
+        <result column="TECHNICAL_PARAM" property="technicalParam" />
+        <result column="MANUAL_CHAPTERS" property="manualChapters" />
+        <result column="TOOL_STATUS" property="toolStatus" />
+        <result column="PRODUCTION_DATE" property="productionDate" />
+        <result column="MERCHANT" property="merchant" />
+        <result column="STOCK" property="stock" />
+        <result column="ORAGINAL_PRICE" property="oraginalPrice" />
+        <result column="DAILY_RENT" property="dailyRent" />
+        <result column="COMPANY" property="company" />
+        <result column="LINKMAN" property="linkman" />
+        <result column="SPECIAL_DESCRIPTION" property="specialDescription" />
+        <result column="REMARK" property="remark" />
+        <result column="STATUS" property="status" />
+        <result column="DELETED" property="deleted" />
+        <result column="CREATE_BY" property="createBy" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_BY" property="updateBy" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, TOOL_CODE, SEQ_NO, TOOL_NAME, TOOL_ENAME, PIC, GUIDE_NUM, AIRCRAFT_TYPE, TECHNICAL_PARAM, MANUAL_CHAPTERS, TOOL_STATUS, PRODUCTION_DATE, MERCHANT, STOCK, ORAGINAL_PRICE, DAILY_RENT, COMPANY, LINKMAN, SPECIAL_DESCRIPTION, REMARK, STATUS, DELETED, CREATE_BY, CREATE_TIME, UPDATE_BY, UPDATE_TIME
+    </sql>
+
+</mapper>

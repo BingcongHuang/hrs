@@ -1,0 +1,40 @@
+/* 修改表格复选框颜色 */
+.layui-form-checked[lay-skin=primary] i {
+    border-color: #3874eb !important;
+    background-color: #3874eb !important;
+}
+.layui-form-checkbox[lay-skin=primary]:hover i{
+    border-color: #3874eb !important;
+}
+
+/* 修改表格分页颜色 */
+.layui-laypage .layui-laypage-curr .layui-laypage-em{
+    background-color: #3874EB !important;
+}
+
+/* 去除表格阴影 */
+.layui-card-body .layui-table-fixed-l,.layui-card-body .layui-table-fixed-r{
+    box-shadow: none !important;
+}
+
+/* 修改图片大小(没有找到素材) */
+.layui-tab-content #empty{
+    width: 300px !important;
+    height: 250px !important;
+    margin: 50px auto 0 !important;
+}
+.layui-tab-content #empty p{
+    right: -100px !important;
+    font-size: 20px !important;
+}
+
+/* 修改字体hover时的阴影效果 */
+a:hover{
+    text-shadow: none !important;
+}
+
+/* 修改下拉框样式 */
+.layui-form-select dl dd.layui-this{
+    background-color: #e6efff !important;
+    color: #3874eb !important;
+}

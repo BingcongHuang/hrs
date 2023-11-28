@@ -1,0 +1,29 @@
+admin:
+  web:
+    port: 18182
+#     port: 18080
+    path: /cloud
+
+
+endpoints:
+  enabled: false
+
+spring:
+    application:
+        name: cloud
+    profiles:
+        active: local
+    http:
+        encoding:
+            force: true
+            charset: UTF-8
+            enabled: true
+    datasource:
+      hikari:
+        connection-init-sql: set names utf8mb4;
+    jackson:
+      date-format: yyyy-MM-dd HH:mm:ss
+      time-zone: GMT+8
+      serialization:
+        #格式化输出
+        indent_output: true

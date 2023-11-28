@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrs.cloud.dao.HrsRegisterRuleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hrs.cloud.entity.HrsRegisterRule">
+        <id column="ID" property="id" />
+        <result column="DATE_START" property="dateStart" />
+        <result column="DATE_END" property="dateEnd" />
+        <result column="UNUSED_LIMIT" property="unusedLimit" />
+        <result column="ADDTION_LIMIT" property="addtionLimit" />
+        <result column="EARLY_DAYS_LIMIT" property="earlyDaysLimit" />
+        <result column="STATUS" property="status" />
+        <result column="DELETED" property="deleted" />
+        <result column="CREATE_BY" property="createBy" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_BY" property="updateBy" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, DATE_START, DATE_END, UNUSED_LIMIT, ADDTION_LIMIT, EARLY_DAYS_LIMIT, STATUS, DELETED, CREATE_BY, CREATE_TIME, UPDATE_BY, UPDATE_TIME
+    </sql>
+
+</mapper>

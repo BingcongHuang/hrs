@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrs.cloud.dao.HrsRegisterChargeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hrs.cloud.entity.HrsRegisterCharge">
+        <id column="ID" property="id" />
+        <result column="DOCTOR_LEVEL" property="doctorLevel" />
+        <result column="REGISTER_CHARGES" property="registerCharges" />
+        <result column="STATUS" property="status" />
+        <result column="DELETED" property="deleted" />
+        <result column="CREATE_BY" property="createBy" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_BY" property="updateBy" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, DOCTOR_LEVEL, REGISTER_CHARGES, STATUS, DELETED, CREATE_BY, CREATE_TIME, UPDATE_BY, UPDATE_TIME
+    </sql>
+
+</mapper>
